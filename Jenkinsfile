@@ -44,7 +44,7 @@ pipeline {
                         sh 'docker-compose -f docker-compose.prod.yml down && docker-compose -f docker-compose.prod.yml up -d --build'
                     } else {
                         // Default deployment logic for other branches
-                        sh 'docker-compose down && docker-compose up -d --build'
+                        sh 'docker compose down && docker compose up -d --build'
                     }
                 }
             }
