@@ -5,7 +5,7 @@ pipeline{
         stage("Code Clone"){
             steps{
                 echo "Code Clone Stage"
-                git url: "https://github.com/iemafzalhassan/Springboot-BankApp.git", branch: "dev"
+                git url: "https://github.com/iemafzalhassan/Springboot-BankApp.git", branch: "prod"
             }
         }
         stage("Code Build & Test"){
