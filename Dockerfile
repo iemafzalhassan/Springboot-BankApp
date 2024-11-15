@@ -31,7 +31,7 @@ FROM openjdk:17-alpine as deployer
 COPY --from=builder /src/target/*.jar /src/target/bankapp.jar
 
 # Expose application port 
-EXPOSE 8080
+EXPOSE 8000
 
 # Start the application
 ENTRYPOINT ["java", "-jar", "/src/target/bankapp.jar"]
