@@ -1,5 +1,5 @@
 pipeline {
-    agent {label "slave-2"};
+    agent {label "slave"};
     
     environment {
         // Define a variable for branch-specific settings (optional)
