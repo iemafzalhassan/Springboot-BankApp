@@ -1,5 +1,5 @@
 pipeline{
-    agent { label 'Slave-Node' }
+    agent { label 'slave-node' }
     
     stages{
         stage("Code Clone"){
